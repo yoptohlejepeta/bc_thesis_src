@@ -14,8 +14,10 @@ Skripty se nachází ve složce `src/`.
 
 - `cytoplasm_segmentation.py` - Skript pro segmentaci cytoplazmy buněk.
 - `nucleus_segmentation.py` - Skript pro segmentaci jader buněk.
-- `watershed.py` - Skript pro segmentaci buněk pomocí metody Watershed (používá masky cytoplazem a jader).
 - `nucleus_nonopt.py` a `cytoplasm_nonopt.py` - Skripty pro segmentaci. Nepoužívají optimalizované parametry.
+- `watershed.py` - Skript pro segmentaci buněk pomocí metody Watershed (používá masky cytoplazem a jader).
+- `watershed_labels.py` - Aplikování metody Watershed na anotace jader a cytoplazmy.
+- `bboxes.py` - Skript pro generování bounding boxů z segmentovaných snímků.
 - `gen_images.py` - Skript pro generování obrázků jednotlivých buněk.
 
 Nachází se zde ještě podsložky `optuna/` a `preps/`. Složka `optuna/` obsahuje skripty pro optimalizaci parametrů `opptuna_cytoplasm.py` a `optuna_nucleus.py`. Složka `preps/` obsahuje skripty pro generování binárních masek bounding boxů. `filled_boxes_labels.py` pro anotace a `filled_boxes.py` pro segmentované snímky.
